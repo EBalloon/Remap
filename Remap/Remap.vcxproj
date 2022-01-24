@@ -137,7 +137,7 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -146,7 +146,6 @@
     <ClCompile Include="kdmapper\portable_executable.cpp" />
     <ClCompile Include="kdmapper\service.cpp" />
     <ClCompile Include="kdmapper\utils.cpp" />
-    <ClCompile Include="oxorany.cpp" />
     <ClCompile Include="Remap.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -158,7 +157,6 @@
     <ClInclude Include="kdmapper\service.hpp" />
     <ClInclude Include="kdmapper\utils.hpp" />
     <ClInclude Include="lazyimporter.h" />
-    <ClInclude Include="oxorany.h" />
     <ClInclude Include="RawData.h" />
     <ClInclude Include="SkCypter.h" />
   </ItemGroup>

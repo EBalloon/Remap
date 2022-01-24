@@ -33,9 +33,6 @@
     <ClCompile Include="kdmapper\utils.cpp">
       <Filter>kdmapper</Filter>
     </ClCompile>
-    <ClCompile Include="oxorany.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Remap.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
@@ -69,9 +66,6 @@
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="SkCypter.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="oxorany.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
