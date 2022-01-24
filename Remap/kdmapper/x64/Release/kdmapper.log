@@ -1,0 +1,11 @@
+﻿  intel_driver.cpp
+  main.cpp
+  kdmapper.cpp
+  portable_executable.cpp
+  service.cpp
+  utils.cpp
+  Gerando código
+  Previous IPDB not found, fall back to full compilation.
+  All 878 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finalizada a geração de código
+  kdmapper.vcxproj -> C:\Users\ddaw5awdwd\Desktop\kdmapper-master\x64\Release\kdmapper.exe
