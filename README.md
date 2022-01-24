@@ -9,5 +9,5 @@ It is working for 1803 until 21H2
 ![imagem](https://user-images.githubusercontent.com/29626806/150711433-8da781b3-3952-4586-8a45-2da3909b2510.png)
 
 
-Warnings:
-    Before closing the game, restore the process you remapped first, otherwise you will have bsod
+### Warnings:
+Before closing the game, restore the process you remapped first, otherwise you will have bsod
