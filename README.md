@@ -11,3 +11,5 @@ It is working for 1803 until 21H2
 
     ### Warnings:
     Before closing the game, restore the process you remapped first, otherwise you will have bsod
+
+### https://www.unknowncheats.me/forum/anti-cheat-bypass/487047-remapping-process.html
