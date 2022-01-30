@@ -11,9 +11,9 @@ It is working for 1803 until 21H2
     ### Warnings:
     Before closing the game, restore the process you remapped first, otherwise you will have bsod
 
-### It seems that this works too, but it needs some code to make it work perfectly
 
 ### Another POC
+### It seems that this works too, but it needs some code to make it work perfectly
     typedef NTSTATUS (fastcall* t_MiCloneProcessAddressSpace)(
          IN  PEPROCESS ProcessToClone,
     	    IN  PEPROCESS ProcessToInitialize,
