@@ -161,9 +161,9 @@ int main(int argc, char* argv[])
 	if (Common.DriverIsRunning(CTL_IsRunning))
 		std::cout << skCrypt("[+] Driver is Running") << std::endl;
 
-	auto notepad = Common.AttachProcess(argv[1]);
-	auto ProcessHacker = Common.AttachProcess(argv[2]);
-	if (!notepad || !ProcessHacker) {
+	auto FakeProcess = Common.AttachProcess(argv[1]);
+	auto GameProcess = Common.AttachProcess(argv[2]);
+	if (!FakeProcess || !GameProcess) {
 		std::cout << skCrypt("[-] Failed to find process pid") << std::endl;
 		system("pause");
 		return 0;
@@ -174,7 +174,7 @@ int main(int argc, char* argv[])
 
 	if (Remap)
 	{
-		Isret = Common.CallCode(CTL_Remap, notepad, ProcessHacker);
+		Isret = Common.CallCode(CTL_Remap, FakeProcess, GameProcess);
 		if (!Isret) {
 			std::cout << skCrypt("[-] Failed to Call Code") << std::endl;
 			system("pause");
