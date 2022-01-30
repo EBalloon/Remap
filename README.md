@@ -16,16 +16,16 @@ It is working for 1803 until 21H2
 
 ### It seems that this works too, but it needs some code to make it work perfectly
 
-        typedef NTSTATUS (fastcall* t_MiCloneProcessAddressSpace)(
-    		        		IN  PEPROCESS ProcessToClone,
-    		        		IN  PEPROCESS ProcessToInitialize,
-    		        		IN  PVOID SectionToMap
-    		        		);
+     typedef NTSTATUS (fastcall* t_MiCloneProcessAddressSpace)(
+    		        IN  PEPROCESS ProcessToClone,
+    		        IN  PEPROCESS ProcessToInitialize,
+    		        IN  PVOID SectionToMap
+    		        );
      
-            auto MiCloneProcessAddressSpace = t_MiCloneProcessAddressSpace(FindPatternImage(PVOID(KernelBase), "48 89 5C 24 ? 55 56 57 41 54 41 55 41 56 41 57 48 8D 6C 24 ? 48 81 EC ?         ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 1F 45 33 C9 44 89 45 C7 0F 57 C0 4C 89 4D CF 0F 11 45 EF 45 8B F8 48"));
-    	        if (!MiCloneProcessAddressSpace)
-    	        	return FALSE;
+          auto MiCloneProcessAddressSpace = t_MiCloneProcessAddressSpace(FindPatternImage(PVOID(KernelBase), "48 89 5C 24 ? 55 56 57 41 54 41 55 41 56 41 57 48 8D 6C 24 ? 48 81 EC ?       ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 1F 45 33 C9 44 89 45 C7 0F 57 C0 4C 89 4D CF 0F 11 45 EF 45 8B F8 48"));
+    	      if (!MiCloneProcessAddressSpace)
+    	      	return FALSE;
      
-            MiCloneProcessAddressSpace(ProcessToClone, ProcessToInitialize, 0);
+          MiCloneProcessAddressSpace(ProcessToClone, ProcessToInitialize, 0);
 
 
