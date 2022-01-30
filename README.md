@@ -11,9 +11,6 @@ It is working for 1803 until 21H2
     ### Warnings:
     Before closing the game, restore the process you remapped first, otherwise you will have bsod
 
-### https://www.unknowncheats.me/forum/anti-cheat-bypass/487047-remapping-process.html
-
-
 ### It seems that this works too, but it needs some code to make it work perfectly
 
     typedef NTSTATUS (fastcall* t_MiCloneProcessAddressSpace)(
@@ -27,4 +24,5 @@ It is working for 1803 until 21H2
  
      MiCloneProcessAddressSpace(ProcessToClone, ProcessToInitialize, 0); // call function
 
+### https://www.unknowncheats.me/forum/anti-cheat-bypass/487047-remapping-process.html
 
