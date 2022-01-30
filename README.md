@@ -13,6 +13,7 @@ It is working for 1803 until 21H2
 
 ### It seems that this works too, but it needs some code to make it work perfectly
 
+### Another POC
     typedef NTSTATUS (fastcall* t_MiCloneProcessAddressSpace)(
          IN  PEPROCESS ProcessToClone,
     	    IN  PEPROCESS ProcessToInitialize,
