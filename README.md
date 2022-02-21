@@ -27,3 +27,6 @@ It is working for 1803 until 21H2
 
 ### https://www.unknowncheats.me/forum/anti-cheat-bypass/487047-remapping-process.html
 
+Forget to unload driver
+https://github.com/EBalloon/Remap/blob/8b4ba7259d8f48b9863126901e1ebf8c9ee91a62/Remap/Remap.cpp#L158
+put this: intel_driver::Unload(iqvw64e_device_handle);
